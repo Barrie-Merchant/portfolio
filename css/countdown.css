@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(/img/snow.jpg);
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    /* display: flex; */
+    justify-content: center;
+}
+
+nav {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+nav li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+.big-text {
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 2rem;
+    text-align: center;
+}
+
+span{
+    font-size: 1.5rem; 
+    padding: 1rem;
+    font-weight: 700;
+    margin: 0 1.5rem;
+    text-align: center;
+}
+
+@media (max-width:420px) {
+    span{
+        font-size:1rem;
+        padding: .8rem;
+    }
+}
+

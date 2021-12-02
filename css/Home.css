@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #01012b;
+    color: snow;
+}
+
+nav {
+    height: 10vh;
+    width: 100vw;
+    margin-bottom: 2rem;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 1rem;
+    padding: 0 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: snow;
+}
+
+nav a:hover,
+nav a:focus{
+    font-weight: 700;
+    transform: scale(1.2);
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.text-container {
+    margin: 0 3rem;
+}
+
+.text-container h1 {
+    font-weight: 700;
+}
+
+.text-container h2 {
+    color: springgreen;
+    padding-bottom: 0.7rem;
+}
+
+.text-container p {
+    padding-bottom: 1rem;
+}
+
+
+img{
+    height: 400px;
+}
+
+footer {
+    margin: 1.5rem auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info h3 {
+    font-size: 1.1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact-info a {
+    color:springgreen;
+    padding-left: 0.8rem;
+}
+
+.contact-info i {
+    color: springgreen;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width:768px) {
+    .main-container {
+        flex-direction: row;
+    }
+    .text-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .text-container p {
+        line-height: 1.8rem;
+    }
+}
+
+@media screen and (min-width:900px) {
+    img {
+        height: 600px;
+    }
+    .text-container h1 {
+        font-size: 5rem;
+    }
+    .text-container h2{
+        font-size: 3rem;
+    }
+
+    .text-container p {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    .contact-info h3 {
+        font-style: 1.5rem;
+    }
+
+    .contact-info a {
+        font-size: 1.2rem;
+    }
+    .contact-info i {
+        font-size: 1.2rem;
+    }
+}

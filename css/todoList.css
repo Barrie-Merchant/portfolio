@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #01012b;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2em;
+    padding: 1em;
+}
+ul li {
+    margin-left: 1em;
+    font-size: 1.2rem;
+}
+ul a {
+    text-decoration: none;
+    color: snow;
+}
+
+ul a:hover {
+    color: rebeccapurple;
+    font-weight: 700;
+    
+}
+
+ul a:focus{
+    text-decoration: underline;
+    padding: .25em;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1em;
+    color: snow;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+
+.addTask {
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.addTask > input[type="text"] {
+    width: 80%;
+    color:snow;
+    border: none;
+    border-bottom: 2px solid #666;
+    background: none;
+    padding: 0.25em;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.addTask button {
+    margin: 0 .25em;
+    background: rebeccapurple;
+    color: snow;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: .25em .5em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.notCompleted, .Completed {
+    margin: 0.15em 0;
+    padding: 1em;
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: snow;
+}
+
+ol {
+    list-style: none;
+    
+}
+
+ol li {
+    width: 100%;
+    padding: 1em;
+    margin: .25em 0;
+    background: skyblue;
+    font-size: 1.5rem;
+   
+}
+
+ol.Completed li {
+    background: springgreen;
+}
+
+
+
+
+li button {
+    float: right;
+    padding: 0.25em;
+    font-size: 1.6rem;
+    line-height: 28px;
+    margin-right: 0.5em;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width:450px) {
+    .container {
+        max-width: 400px;
+    }
+    .addTask > input[type="text"]{
+        width:50%;
+    }
+    ol li {
+        width:70%;
+        margin:0 auto;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width:900px) {
+    .container {
+        max-width:800px
+    }
+
+    ol li {
+        width:80%
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/todoList.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>To-Do List</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/project-home.html">Projects</a></li>
+            </ul>
+        </nav>
+        <h1>To-do List</h1>
+    </header>
+
+    <main class="container">
+        
+
+        <div class="addTask">
+            <input type="text" placeholder="Add a Task">
+            <button>Add</button>
+        </div>
+           
+            <ol class="notCompleted">
+                <h3>Not Completed</h3>
+                <li>Tasks:
+                    <button><i class="fas fa-check"></i></button>
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </li>
+            </ol>
+
+            <ol class="Completed">
+                <h3>Completed</h3>
+                <li>Tasks:
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </li>
+                </ol>
+            </ol>
+        
+    </main>
+
+    <script src="/js/toDoList.js"></script>
+</body>
+</html>
